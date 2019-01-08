@@ -84,7 +84,6 @@
 
 .work{
   color: #f6e7e8;
-  margin-bottom: 80px;
   border-bottom: 2px groove #f6e7e8;
 }
 
@@ -138,18 +137,16 @@
 
 
 .contact {
+  background-color: black;
   color: #f6e7e8;
-  height: 600px;
   display: flex;
   justify-content: center;
+  border-bottom: 2px groove #f6e7e8;
 }
-.contact-wrapper{
-  width: 100vw;
-  background:rgba(0,0,0,0.35);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+
+
+.contact_title {
+  margin-top: 80px;
 }
 
 .phone i{
@@ -172,11 +169,14 @@
 .linkedin a{
   text-decoration: none;
   color:  #f6e7e8;
-  transition: 0.75;
+  transition: 0.75s;
 }
 
-.linkedin a:hover{
-  opacity:.50;
+.linkedin a:hover,
+.linkedin a:active{
+  color: lightcoral;
+  letter-spacing: 1px;
+  text-shadow: 0 0 50px #780206;
 }
 
 .github {
@@ -187,11 +187,41 @@
 .github a{
   text-decoration: none;
   color:  #f6e7e8;
-  transition: 0.75;
+  transition: 0.75s;
 }
 
-.github a:hover{
-  opacity:.50;
+.github a:hover,
+.github a:active{
+    color: lightcoral;
+    letter-spacing: 1px;
+    text-shadow: 0 0 50px #780206;
+}
+
+.footer {
+  color: white;
+  font-family: 'Merriweather', serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 400px;
+  margin-top: 40px;
+}
+
+.logo-footer { 
+  margin-top: 80px;
+}
+
+.logo-footer img {
+  width: 180px;
+  height: 100%;
+  opacity: 0.5;
+}
+
+.copyright-wrapper {
+  margin-top: 60px;
+  font-size: 0.7em;
+  color: #858585;
 }
 
 @media (max-width: 768px) {

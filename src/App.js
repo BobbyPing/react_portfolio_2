@@ -11,6 +11,7 @@ import course_schedule from './course_schedule.png';
 import mb_hoa from './mb_hoa.png';
 import product from './product.png';
 import fries from './fries.png';
+import logo from './logo.png';
 
 import WhenInView from './components/About/About';
 import Bounce from 'react-reveal/Bounce';
@@ -217,6 +218,27 @@ class App extends Component {
               </WhenInView> 
         
         </div>
+
+        <WhenInView>
+                {({ isInView }) =>
+              <Bounce bottom hide={!isInView}> 
+
+        <div class="footer">
+            <div class="logo-footer">
+                <img alt = "fl" src= { logo }></img>
+            </div>
+
+            <div class="copyright-wrapper">
+                &copy; 2019 Bobby Ping &#124; All rights reserved
+            </div>
+        </div>
+
+        </Bounce>
+              }
+              </WhenInView> 
+
+      
+
 
 
     </div>
