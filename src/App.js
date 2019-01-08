@@ -16,6 +16,8 @@ import WhenInView from './components/About/About';
 import Bounce from 'react-reveal/Bounce';
 
 
+
+
 class App extends Component {
   state = {
     sideDrawerOpen: false
@@ -183,6 +185,40 @@ class App extends Component {
           
 
         </div>
+        <div className = "contact" id ="contact">
+        <WhenInView>
+                {({ isInView }) =>
+              <Bounce bottom hide={!isInView}> 
+            <div class="contact-wrapper">
+  
+              <div class="contact_title">
+                <h1>Let's Talk! </h1>
+              </div>
+              <div class="phone">
+                <h2> 435-602-9803</h2>
+              </div>
+              <div class="email">
+                <h2>rtping86@gmail.com</h2>  
+              </div>
+              <div class="linkedin">
+                  <a href="https://www.linkedin.com/in/pingbobby/" target="_0">
+                  <i class="fab fa-linkedin"> See me on LinkedIn</i>
+                  </a>
+              </div>
+              <div class="github">
+                <a href= "https://github.com/BobbyPing" target="_0"> <i class="fab fa-github-square"> See me on GitHub</i>
+                  </a>
+              </div>
+      
+            </div>
+
+            </Bounce>
+              }
+              </WhenInView> 
+        
+        </div>
+
+
     </div>
 
   
