@@ -44,6 +44,13 @@
 
 .react-reveal button {
   background: #f6e7e8;
+  cursor: pointer;
+  transition: .75s;
+}
+
+.react-reveal button:hover,
+.react-reveal button:active{
+  background-color: lightcoral;
 }
 
 .content {
@@ -78,11 +85,13 @@
 .work{
   color: #f6e7e8;
   margin-bottom: 80px;
+  border-bottom: 2px groove #f6e7e8;
 }
 
 .react-reveal.squares_wrapper {
   display: flex;
   justify-content: center;
+  width: 100vw;
 }
 
 .squares {
@@ -98,12 +107,24 @@
 .img_wrapper img {
   width: 650px;
   height: 400px;
+  transition: .75s
+}
+
+.img_wrapper img:hover,
+.img_wrapper img:active {
+  opacity: .50;
 }
 
 .img_wrapper_am img{
   width: 650px;
   height: 400px;
   padding-top: 50px;
+  transition: .75s;
+}
+
+.img_wrapper_am img:hover,
+.img_wrapper_am img:active {
+  opacity: .50;
 }
 
 .square_text_wrapper {
@@ -156,6 +177,10 @@
     margin: 0;
   }
 
+  .react-reveal.header {
+    margin-top: 60px;
+    margin-bottom: -30px;
+  }
   .react-reveal.squares_wrapper{
     width: 100%;
     margin: 0;
@@ -163,6 +188,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-bottom: 80px;
   }
 
   .squares {
